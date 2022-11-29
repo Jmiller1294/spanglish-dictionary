@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Spanglish Dictionary</string>
+
+    <string-array name="word_list">
+        <item>word 1</item>
+        <item>word 2</item>
+        <item>word 3</item>
+        <item>word 4</item>
+        <item>word 5</item>
+        <item>word 6</item>
+    </string-array>
+    <string-array name="def_list">
+        <item>def 1</item>
+        <item>def 2</item>
+        <item>def 3</item>
+        <item>def 4</item>
+        <item>def 5</item>
+        <item>def 6</item>
+    </string-array>
+    <string-array name="palabra_list">
+        <item>Palabra 1</item>
+        <item>palabra 2</item>
+        <item>palabra 3</item>
+        <item>palabra 4</item>
+        <item>palabra 5</item>
+        <item>palabra 6</item>
+    </string-array>
+    <string-array name="use_list">
+        <item>use 1</item>
+        <item>use 2</item>
+        <item>use 3</item>
+        <item>use 4</item>
+        <item>use 5</item>
+        <item>use 6</item>
+    </string-array>
 </resources>

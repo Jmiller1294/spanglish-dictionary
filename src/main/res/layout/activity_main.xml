@@ -51,7 +51,8 @@
         android:layout_gravity="fill_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="87dp"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:onClick="startWordLookup">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -227,5 +228,6 @@
                 android:text="Invite friends to download the app" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
+
 
 </GridLayout>
