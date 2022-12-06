@@ -11,4 +11,6 @@ public class SavedWordsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_words);
     }
+
+
 }
