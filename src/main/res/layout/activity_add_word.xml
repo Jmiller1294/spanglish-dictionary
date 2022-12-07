@@ -6,4 +6,95 @@
     android:layout_height="match_parent"
     tools:context=".AddWordActivity">
 
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingStart="5dp"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/enterWordView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter word:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/enterWordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:inputType="text"
+            />
+
+        <TextView
+            android:id="@+id/enterDefView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter definition:" />
+
+        <EditText
+            android:id="@+id/enterDefEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:hint=""
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/enterPalabraView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter translation to Spanish here:" />
+
+        <EditText
+            android:id="@+id/enterPalabraEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/enterUseView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter sentence example using word:" />
+
+        <EditText
+            android:id="@+id/enterUseEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:inputType="text"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:text="Add Word"
+            android:onClick="sendData"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

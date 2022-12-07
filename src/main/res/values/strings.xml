@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Spanglish Dictionary</string>
+    <string name="add_a_new_word_textview">Please add a new word</string>
+    <string name="enter_word_edittext">Enter word</string>
+    <string name="add_word_button">Add Word</string>
+
+    <string-array name="word_of_day_list">
+        <item>word 1</item>
+        <item>word 2</item>
+        <item>word 3</item>
+        <item>word 4</item>
+        <item>word 5</item>
+        <item>word 6</item>
+    </string-array>
 
     <string-array name="word_list">
         <item>word 1</item>

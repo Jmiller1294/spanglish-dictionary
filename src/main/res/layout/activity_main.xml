@@ -28,13 +28,13 @@
                 android:text="WORD OF THE DAY" />
 
             <TextView
+                android:id="@+id/word_of_day"
                 style="@style/TextAppearance.AppCompat.Subhead"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/word_text"
                 android:layout_centerInParent="true"
                 android:padding="8dp"
-                android:text="primo"
                 android:layout_marginTop="10dp"
                 android:textColor="#3388FF"
                 android:textSize="25dp"

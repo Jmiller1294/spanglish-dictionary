@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
+import android.util.Log;
+
 import java.util.ArrayList;
 
 public class WordLookupActivity extends AppCompatActivity {
@@ -17,12 +19,14 @@ public class WordLookupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_lookup);
 
+
         gridColumnCount = 1;
         recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new GridLayoutManager(this, gridColumnCount));
         wordsData = new ArrayList<>();
         spanglishAdapter = new spanglishAdapter(this, wordsData);
         recyclerView.setAdapter(spanglishAdapter);
+
         loadWordsData();
     }
 
