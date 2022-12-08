@@ -1,19 +1,21 @@
 package com.example.spanglishdictionary;
 
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
-public class spanglishAdapter extends RecyclerView.Adapter<spanglishAdapter.ViewHolder>{
+public class spanglishAdapter extends RecyclerView.Adapter<spanglishAdapter.ViewHolder> {
 
     private ArrayList<Words> wordsData;
     private Context context;
+
     public spanglishAdapter(Context context, ArrayList<Words> wordsArrayList){
         this.context = context;
         wordsData = wordsArrayList;
@@ -36,6 +38,7 @@ public class spanglishAdapter extends RecyclerView.Adapter<spanglishAdapter.View
         return wordsData.size();
     }
 
+
     protected class ViewHolder extends RecyclerView.ViewHolder{
         private TextView word, def, palabra, use;
 
@@ -54,6 +57,6 @@ public class spanglishAdapter extends RecyclerView.Adapter<spanglishAdapter.View
             use.setText(currentWord.getUse());
         }
 
-    }
 
+    }
 }

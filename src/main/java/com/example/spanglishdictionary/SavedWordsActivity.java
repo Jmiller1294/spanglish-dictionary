@@ -1,44 +1,45 @@
 package com.example.spanglishdictionary;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class SavedWordsActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private ArrayList<Words> wordsData;
-    private spanglishAdapter spanglishAdapter;
-    private int gridColumnCount;
+    private savedWordsAdapter savedWordsAdapter;
+    private WordsViewModel mWordsViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saved_words);
 
-        gridColumnCount = 1;
-        recyclerView = findViewById(R.id.recycler_view);
-        recyclerView.setLayoutManager(new GridLayoutManager(this, gridColumnCount));
-        wordsData = new ArrayList<>();
-        spanglishAdapter = new spanglishAdapter(this, wordsData);
-        recyclerView.setAdapter(spanglishAdapter);
-        loadWordsData();
-    }
+        mWordsViewModel = ViewModelProviders.of(this).get(WordsViewModel.class);
 
-    private void loadWordsData() {
-        wordsData.clear();
-        String [] words = getResources().getStringArray(R.array.word_list);
-        String [] defs = getResources().getStringArray(R.array.def_list);
-        String [] palabras = getResources().getStringArray(R.array.palabra_list);
-        String [] uses = getResources().getStringArray(R.array.use_list);
-        for(int i=0; i<words.length; i++){
-            wordsData.add(new Words(words[i],defs[i], palabras[i],uses[i]));
-        }
-        spanglishAdapter.notifyDataSetChanged();
-    }
 
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        savedWordsAdapter = new savedWordsAdapter(this);
+        recyclerView.setAdapter(savedWordsAdapter);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        mWordsViewModel.getAllWords().observe(this, new Observer<List<Words>>() {
+            @Override
+            public void onChanged(@Nullable final List<Words> words) {
+                // Update the cached copy of the words in the adapter.
+                Log.d("word_look", words.toString());
+                savedWordsAdapter.setWords(words);
+            }
+        });
+    }
 
 }

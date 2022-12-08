@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         //initialize variables
         mWordOfDay = findViewById(R.id.word_of_day);
 
+        //set word of day with intent extra
         if(getIntent().getStringExtra("word") != null) {
             mWordOfDay.setText(getIntent().getStringExtra("word"));
         }
@@ -33,16 +34,18 @@ public class MainActivity extends AppCompatActivity {
             mWordOfDay.setText("primo");
         }
 
-
     }
+
     public void startWordLookup(View view) {
         Intent intent = new Intent(MainActivity.this, WordLookupActivity.class);
         startActivity(intent);
     }
+
     public void viewSavedEntries(View view){
         Intent intent = new Intent(MainActivity.this,SavedWordsActivity.class);
         startActivity(intent);
     }
+
     public void inviteFriend(View view){
         Runnable objRunnable = new Runnable() {
             @Override
@@ -69,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
                 .setText(msg)
                 .startChooser();
     }
+
+    //start AddWordActivity
     public void addWord(View view){
         Intent intent = new Intent(MainActivity.this,AddWordActivity.class);
         startActivity(intent);

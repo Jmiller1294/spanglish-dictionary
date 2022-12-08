@@ -44,9 +44,6 @@ public class CustomReceiver extends BroadcastReceiver {
             //start main activity
             context.startActivity(mainIntent);
 
-            // Display the toast.
-            Toast.makeText(context, toastMessage, Toast.LENGTH_SHORT).show();
-
 
         }
     }
