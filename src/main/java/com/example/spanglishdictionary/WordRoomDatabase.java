@@ -52,13 +52,13 @@ public abstract class WordRoomDatabase extends RoomDatabase {
 
         private final WordsDao mDao;
         String[] words = {
-                "marketa",
-        };
-        String[] defs = {
                 "market",
         };
+        String[] defs = {
+                "the market",
+        };
         String[] palabras = {
-                "werewr",
+                "marketa",
         };
         String[] uses = {
                 "Can you pick up some eggs at la marketa?",

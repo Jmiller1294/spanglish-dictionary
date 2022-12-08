@@ -18,6 +18,30 @@
     </string-array>
 
     <string-array name="word_list">
+        <item>chill</item>
+        <item>no worries</item>
+        <item>cereal</item>
+        <item>type</item>
+        <item>a show</item>
+        <item>google</item>
+        <item>hang</item>
+        <item>lunch</item>
+        <item>party</item>
+        <item>like</item>
+    </string-array>
+    <string-array name="def_list">
+        <item>to chill out</item>
+        <item>don\'t worry</item>
+        <item>all different types of cereal</item>
+        <item>to type</item>
+        <item>it\'s a show (that\'s crazy)</item>
+        <item>to search on Google</item>
+        <item>hang out together</item>
+        <item>lunch</item>
+        <item>a party</item>
+        <item>but like</item>
+    </string-array>
+    <string-array name="palabra_list">
         <item>chilear</item>
         <item>cojelo suave</item>
         <item>conflei</item>
@@ -28,30 +52,6 @@
         <item>lonche</item>
         <item>pari</item>
         <item>pero like</item>
-    </string-array>
-    <string-array name="def_list">
-        <item>to chill out</item>
-        <item>don\'t worry</item>
-        <item>cereal</item>
-        <item>to type</item>
-        <item>it\'s a show (that\'s crazy)</item>
-        <item>to search on Google</item>
-        <item>hang out</item>
-        <item>lunch</item>
-        <item>party</item>
-        <item>but like</item>
-    </string-array>
-    <string-array name="palabra_list">
-        <item>werewr</item>
-        <item>werewre</item>
-        <item>ttttttt</item>
-        <item>kkkkkkkk</item>
-        <item>kkkkkkkk</item>
-        <item>kkkkkkkk</item>
-        <item>kkkkkkkk</item>
-        <item>kkkkkkkk</item>
-        <item>kkkkkkkk</item>
-        <item>kkkkkkkk</item>
     </string-array>
 
     <string-array name="use_list">
