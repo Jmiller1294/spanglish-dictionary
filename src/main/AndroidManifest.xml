@@ -17,17 +17,28 @@
             android:name=".CustomReceiver"
             android:enabled="true"
             android:exported="true"></receiver>
-
-        <activity
-            android:name=".AddWordActivity"
-            android:exported="false" />
         <activity
             android:name=".SavedWordsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Saved Words"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
         <activity
             android:name=".WordLookupActivity"
             android:exported="false"
             android:label="Word Lookup"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".AddWordActivity"
+            android:exported="false"
+            android:label="Add Word"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

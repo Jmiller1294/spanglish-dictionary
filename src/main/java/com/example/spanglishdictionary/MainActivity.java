@@ -1,8 +1,13 @@
 package com.example.spanglishdictionary;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ShareCompat;
+import androidx.lifecycle.Observer;
+import androidx.lifecycle.ViewModelProviders;
 import androidx.localbroadcastmanager.content.LocalBroadcastManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -14,14 +19,31 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
     private TextView mWordOfDay;
-
+    private RecyclerView recyclerView;
+    private ArrayList<Words> wordsData;
+    private savedWordsAdapter savedWordsAdapter;
+    private WordsViewModel mWordsViewModel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mWordsViewModel = ViewModelProviders.of(this).get(WordsViewModel.class);
+
+        mWordsViewModel.getAllWords().observe(this, new Observer<List<Words>>() {
+            @Override
+            public void onChanged(@Nullable final List<Words> words) {
+                // Update the cached copy of the words in the adapter.
+                Log.d("word_look", words.toString());
+
+            }
+        });
 
         //initialize variables
         mWordOfDay = findViewById(R.id.word_of_day);
@@ -31,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             mWordOfDay.setText(getIntent().getStringExtra("word"));
         }
         else {
-            mWordOfDay.setText("primo");
+            mWordOfDay.setText("lonche");
         }
 
     }

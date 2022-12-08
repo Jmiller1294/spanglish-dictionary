@@ -5,44 +5,65 @@
     <string name="add_word_button">Add Word</string>
 
     <string-array name="word_of_day_list">
-        <item>word 1</item>
-        <item>word 2</item>
-        <item>word 3</item>
-        <item>word 4</item>
-        <item>word 5</item>
-        <item>word 6</item>
+        <item>chilear</item>
+        <item>cojelo suave</item>
+        <item>conflei</item>
+        <item>taipear</item>
+        <item>hace un show</item>
+        <item>Googlear</item>
+        <item>janguear</item>
+        <item>lonche</item>
+        <item>pari</item>
+        <item>pero like</item>
     </string-array>
 
     <string-array name="word_list">
-        <item>word 1</item>
-        <item>word 2</item>
-        <item>word 3</item>
-        <item>word 4</item>
-        <item>word 5</item>
-        <item>word 6</item>
+        <item>chilear</item>
+        <item>cojelo suave</item>
+        <item>conflei</item>
+        <item>taipear</item>
+        <item>hace un show</item>
+        <item>Googlear</item>
+        <item>janguear</item>
+        <item>lonche</item>
+        <item>pari</item>
+        <item>pero like</item>
     </string-array>
     <string-array name="def_list">
-        <item>def 1</item>
-        <item>def 2</item>
-        <item>def 3</item>
-        <item>def 4</item>
-        <item>def 5</item>
-        <item>def 6</item>
+        <item>to chill out</item>
+        <item>don\'t worry</item>
+        <item>cereal</item>
+        <item>to type</item>
+        <item>it\'s a show (that\'s crazy)</item>
+        <item>to search on Google</item>
+        <item>hang out</item>
+        <item>lunch</item>
+        <item>party</item>
+        <item>but like</item>
     </string-array>
     <string-array name="palabra_list">
-        <item>Palabra 1</item>
-        <item>palabra 2</item>
-        <item>palabra 3</item>
-        <item>palabra 4</item>
-        <item>palabra 5</item>
-        <item>palabra 6</item>
+        <item>werewr</item>
+        <item>werewre</item>
+        <item>ttttttt</item>
+        <item>kkkkkkkk</item>
+        <item>kkkkkkkk</item>
+        <item>kkkkkkkk</item>
+        <item>kkkkkkkk</item>
+        <item>kkkkkkkk</item>
+        <item>kkkkkkkk</item>
+        <item>kkkkkkkk</item>
     </string-array>
+
     <string-array name="use_list">
-        <item>use 1</item>
-        <item>use 2</item>
-        <item>use 3</item>
-        <item>use 4</item>
-        <item>use 5</item>
-        <item>use 6</item>
+        <item>Chile! I\'ll be there in a second</item>
+        <item>Cojelo con take it easy. You\'ll get the job.</item>
+        <item>I\'ll just have some conflei for breakfast.</item>
+        <item>I have to taipear my essay before tomorrow.</item>
+        <item>They broke up again? Es un show!</item>
+        <item>Googleamos where the restaurant is.</item>
+        <item>I\'m bored. Wanna janguear?</item>
+        <item>Let\'s get lonche before we finish shopping.</item>
+        <item>¡Vamos! My friend\'s having a pari!</item>
+        <item>I wanted to go out, pero like my parents said no</item>
     </string-array>
 </resources>

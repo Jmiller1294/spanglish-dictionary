@@ -18,6 +18,7 @@ public class SavedWordsActivity extends AppCompatActivity {
     private ArrayList<Words> wordsData;
     private savedWordsAdapter savedWordsAdapter;
     private WordsViewModel mWordsViewModel;
+    private List<Words> words;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
